@@ -7,6 +7,7 @@
   </head>
   <body>
     <script>
+      let numUm, numDois, result;
       operacao = Number(
         prompt(
           "escolha sua operação, digite 1 para adição, 2 para subtração, 3 para multiplicação e 4 para divisão",
@@ -21,7 +22,11 @@
       } else if (operacao === 3) {
         alert("escolhido multiplicação");
       } else if (operacao === 4) {
-        alert("escolhido divisão");
+        numUm = Number(prompt("informe o número que vai ser dividido"));
+        numDois = Number(prompt("informe o número que vai dividir"));
+        alert(
+          `o numero ${numUm} dividido por ${numDois} resulta em ${(numUm / numDois).toFixed(2)}`,
+        );
       } else {
         alert("operação invalída escolhida");
       }
