@@ -47,8 +47,13 @@
       result = nu1 * nu2;
 
       alert(`o resutado da sua multiplicação é: ${result.toFixed(2)}`);
+      
     } else if (operacao === 4) {
-      alert("escolhido divisão");
+        numUm = Number(prompt("informe o número que vai ser dividido"));
+        numDois = Number(prompt("informe o número que vai dividir"));
+        alert(
+          `o numero ${numUm} dividido por ${numDois} resulta em ${(numUm / numDois).toFixed(2)}`,
+        );
     } else {
       alert("operação invalída escolhida");
     }
