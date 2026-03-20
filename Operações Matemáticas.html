@@ -1,63 +1,52 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
+  <body>
+    <script>
+      let numUm, numDois, result;
+      operacao = Number(
+        prompt(
+          "Escolha uma operação matemática. Digite 1 para adição, 2 para subtração, 3 para multiplicação ou 4 para divisão",
+        ),
+      );
 
-<body>
-  <script>
-    operacao = Number(
-      prompt(
-        "escolha sua operação, digite 1 para adição, 2 para subtração, 3 para multiplicação e 4 para divisão",
-      ),
-    );
-    // if verifica qual o valor da varíavel e fara uma ação com base no valor dela
-    if (operacao === 1) {
-      //o programa dentro das chaves so acontece caso operacao seja igual a 1
-      let numUm, numDois, resultado
+      if (operacao === 1) {
+        // if (se em inglês) verifica se algo é verdadeiro e realiza uma ação se for
+        // else (se não em ingles) executa outra ação caso if seja falso
+        // o programa dentro das chaves so acontece caso if de como verdadeiro
 
-      numUm = Number(prompt("me diga o primeiro valor"));
-      numDois = Number(prompt("me diga o segundo valor"));
-      resultado = numUm + numDois;
+        numUm = Number(prompt("me diga o primeiro valor"));
+        numDois = Number(prompt("me diga o segundo valor"));
+        result = numUm + numDois;
 
-      alert(`o resultado da adição é: ${resultado.toFixed(2)}`);
-      
-    } else if (operacao === 2) {
-      let numUm;
-      let numDois;
-      let resultado;
+        alert(`o resultado da adição é: ${result.toFixed(2)}`);
+      } else if (operacao === 2) {
+        numUm = Number(prompt("Me mostre o primeiro número"));
+        numDois = Number(prompt("Me mostre o segundo número"));
+        result = numUm - numDois;
 
-      numUm = Number(prompt("Me mostre o primeiro número"));
-      numDois = Number(prompt("Me mostre o segundo número"));
-      resultado = numUm - numDois;
-      alert(`o resultado da subtração é: ${resultado.toFixed(2)}`);
-      
-    } else if (operacao === 3) {
+        alert(`o resultado da subtração é: ${result.toFixed(2)}`);
+      } else if (operacao === 3) {
+        numUm = Number(prompt("insira o primeiro número:"));
+        numDois = Number(prompt("insira o segundo número:"));
+        result = numUm * numDois;
 
-      let nu1
-      let nu2
-      let result
-
-      nu1 = Number(prompt("insira o primeiro número:"));
-      nu2 = Number(prompt("insira o segundo número:"));
-
-      result = nu1 * nu2;
-
-      alert(`o resutado da sua multiplicação é: ${result.toFixed(2)}`);
-      
-    } else if (operacao === 4) {
+        alert(`o resutado da sua multiplicação é: ${result.toFixed(2)}`);
+      } else if (operacao === 4) {
         numUm = Number(prompt("informe o número que vai ser dividido"));
         numDois = Number(prompt("informe o número que vai dividir"));
-        alert(
-          `o numero ${numUm} dividido por ${numDois} resulta em ${(numUm / numDois).toFixed(2)}`,
-        );
-    } else {
-      alert("operação invalída escolhida");
-    }
-  </script>
-</body>
 
+        alert(
+          `o número ${numUm} dividido por ${numDois} resulta em ${(numUm / numDois).toFixed(2)}`,
+        );
+      } else {
+        alert("operação invalída escolhida");
+      }
+    </script>
+  </body>
 </html>
