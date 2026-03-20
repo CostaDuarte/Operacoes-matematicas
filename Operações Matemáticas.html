@@ -1,22 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
-      operacao = Number(
-        prompt(
-          "escolha sua operação, digite 1 para adição, 2 para subtração, 3 para multiplicação e 4 para divisão",
-        ),
-      );
-      // if verifica qual o valor da varíavel e fara uma ação com base no valor dela
-      if (operacao === 1) {
-        //o programa dentro das chaves so acontece caso operacao seja igual a 1
-        alert("escolhido adição");
-      } else if (operacao === 2) { 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    operacao = Number(
+      prompt(
+        "escolha sua operação, digite 1 para adição, 2 para subtração, 3 para multiplicação e 4 para divisão",
+      ),
+    );
+    // if verifica qual o valor da varíavel e fara uma ação com base no valor dela
+    if (operacao === 1) {
+      //o programa dentro das chaves so acontece caso operacao seja igual a 1
+      let numUm, numDois, resultado
+
+      numUm = Number(prompt("me diga o primeiro valor"));
+      numDois = Number(prompt("me diga o segundo valor"));
+      resultado = numUm + numDois;
+
+      alert(`o resultado da adição é: ${resultado.toFixed(2)}`);
+      
+    } else if (operacao === 2) {
       let numUm;
       let numDois;
       let resultado;
@@ -26,13 +35,14 @@
       resultado = numUm - numDois;
       alert(`o resultado da subtração é: ${resultado.toFixed(2)}`);
       
-      } else if (operacao === 3) {
-        alert("escolhido multiplicação");
-      } else if (operacao === 4) {
-        alert("escolhido divisão");
-      } else {
-        alert("operação invalída escolhida");
-      }
-    </script>
-  </body>
+    } else if (operacao === 3) {
+      alert("escolhido multiplicação");
+    } else if (operacao === 4) {
+      alert("escolhido divisão");
+    } else {
+      alert("operação invalída escolhida");
+    }
+  </script>
+</body>
+
 </html>
