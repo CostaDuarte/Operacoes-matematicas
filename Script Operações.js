@@ -1,0 +1,26 @@
+let numUm, numDois, result;
+//// ADIÇÃO
+numUm = Number(prompt("me diga o primeiro valor"));
+numDois = Number(prompt("me diga o segundo valor"));
+result = numUm + numDois;
+
+alert(`o resultado da adição é: ${result.toFixed(2)}`);
+//// SUBTRAÇÃO
+numUm = Number(prompt("Me mostre o primeiro número"));
+numDois = Number(prompt("Me mostre o segundo número"));
+result = numUm - numDois;
+
+alert(`o resultado da subtração é: ${result.toFixed(2)}`);
+//// MULTIPLICAÇÃO
+numUm = Number(prompt("insira o primeiro número:"));
+numDois = Number(prompt("insira o segundo número:"));
+result = numUm * numDois;
+
+alert(`o resutado da sua multiplicação é: ${result.toFixed(2)}`);
+//// DIVISÃO
+numUm = Number(prompt("informe o número que vai ser dividido"));
+numDois = Number(prompt("informe o número que vai dividir"));
+
+alert(
+  `o número ${numUm} dividido por ${numDois} resulta em ${(numUm / numDois).toFixed(2)}`,
+);
