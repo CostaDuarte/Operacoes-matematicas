@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,30 +14,33 @@
           "Escolha uma operação matemática. Digite 1 para adição, 2 para subtração, 3 para multiplicação ou 4 para divisão",
         ),
       );
+      // if ("se" em inglês) verifica se algo é verdadeiro e realiza uma ação se for
+      // else ("se não" em ingles) executa outra ação caso if seja falso
+      // o programa dentro das chaves so acontece caso if de como verdadeiro
 
       if (operacao === 1) {
-        // if (se em inglês) verifica se algo é verdadeiro e realiza uma ação se for
-        // else (se não em ingles) executa outra ação caso if seja falso
-        // o programa dentro das chaves so acontece caso if de como verdadeiro'
-
+        //// ADIÇÃO
         numUm = Number(prompt("me diga o primeiro valor"));
         numDois = Number(prompt("me diga o segundo valor"));
         result = numUm + numDois;
 
         alert(`o resultado da adição é: ${result.toFixed(2)}`);
       } else if (operacao === 2) {
+        //// SUBTRAÇÃO
         numUm = Number(prompt("Me mostre o primeiro número"));
         numDois = Number(prompt("Me mostre o segundo número"));
         result = numUm - numDois;
 
         alert(`o resultado da subtração é: ${result.toFixed(2)}`);
       } else if (operacao === 3) {
+        //// MULTIPLICAÇÃO
         numUm = Number(prompt("insira o primeiro número:"));
         numDois = Number(prompt("insira o segundo número:"));
         result = numUm * numDois;
 
         alert(`o resutado da sua multiplicação é: ${result.toFixed(2)}`);
       } else if (operacao === 4) {
+        //// DIVISÃO
         numUm = Number(prompt("informe o número que vai ser dividido"));
         numDois = Number(prompt("informe o número que vai dividir"));
 
