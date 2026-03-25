@@ -1,14 +1,13 @@
-let numUm, numDois;
 //// ADIÇÃO
 numUm = Number(prompt("me diga o primeiro valor da adição"));
 numDois = Number(prompt("me diga o segundo valor da adição"));
 
-alert(`o resultado da adição é: ${(numUm+numDois).toFixed(2)}`);
+alert(`o resultado da adição é: ${(numUm + numDois).toFixed(2)}`);
 //// SUBTRAÇÃO
 numUm = Number(prompt("Me mostre o primeiro número da subtração"));
 numDois = Number(prompt("Me mostre o segundo número da subtração"));
 
-alert(`o resultado da subtração é: ${(numUm-numDois).toFixed(2)}`);
+alert(`o resultado da subtração é: ${(numUm - numDois).toFixed(2)}`);
 //// MULTIPLICAÇÃO
 numUm = Number(prompt("insira o primeiro número da multiplicação:"));
 numDois = Number(prompt("insira o segundo número da multiplicação:"));
