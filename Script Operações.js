@@ -6,11 +6,10 @@ result = numUm + numDois;
 
 alert(`o resultado da adição é: ${result.toFixed(2)}`);
 //// SUBTRAÇÃO
-numUm = Number(prompt("Me mostre o primeiro número"));
-numDois = Number(prompt("Me mostre o segundo número"));
-result = numUm - numDois;
+numUm = Number(prompt("Me mostre o primeiro número da subtração"));
+numDois = Number(prompt("Me mostre o segundo número da subtração"));
 
-alert(`o resultado da subtração é: ${result.toFixed(2)}`);
+alert(`o resultado da subtração é: ${(numUm-numDois).toFixed(2)}`);
 //// MULTIPLICAÇÃO
 numUm = Number(prompt("insira o primeiro número:"));
 numDois = Number(prompt("insira o segundo número:"));
